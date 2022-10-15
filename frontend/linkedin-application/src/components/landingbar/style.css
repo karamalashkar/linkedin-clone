@@ -2,10 +2,11 @@
 .navbar{
     display: flex;
     justify-content: flex-start;
+    width: 100%;
 }
 
 .navbar img{
-    width: 10%;
-    height: 10%;
+    width: 20%;
+    height: 20%;
     margin: 0 120px;
 }

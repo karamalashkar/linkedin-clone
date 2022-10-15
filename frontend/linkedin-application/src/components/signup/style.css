@@ -1,11 +1,12 @@
 .form{
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 100%;
+    margin-left: 120px;
 }
 
 .input{
-    margin: 5px 120px;
+    margin: 5px 0;
     width: 55%;
     padding: 20px 10px;
     font-size: 20px;
@@ -13,7 +14,6 @@
 
 .btn{
     margin-top: 20px;
-    width: 58%;
     background-color: #2977c9;
     color: white;
     border: none;
@@ -24,4 +24,9 @@
 .btn:hover{
     cursor: pointer;
     background-color: #006097;
+}
+
+p{
+    font-size: 20px;
+    margin: 5px;
 }

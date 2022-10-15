@@ -7,7 +7,8 @@ const SignUp = () => {
             <input type="email" placeholder="Email" className="input"></input>
             <input type="password" placeholder="Password" className="input"></input>
             <input type="text" placeholder="Location" className="input"></input>
-            <input type="submit" value="Join" className="input btn"></input> 
+            <input type="submit" value="Join" className="input btn"></input>
+            <p>Already on LinkedIn? <a href="">Sign in</a></p> 
         </div>
     )
 };
