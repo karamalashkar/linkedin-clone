@@ -1,5 +1,20 @@
 const mongoose = require('mongoose');
 
+const Company = new mongoose.Schema({
+    name:{
+        type: String,
+        required: 'Company name is required'        
+    },
+    company_category:{
+        type: String,
+        required: 'Category is required'
+    },
+    bio: {
+        type: String,
+        required: 'Bio is required'
+    }
+})
+
 const userSchema = new mongoose.Schema({
     name: {
         type: String,
@@ -7,7 +22,7 @@ const userSchema = new mongoose.Schema({
     },
     email: {
         type: String,
-        required: 'email is required',
+        required: 'Email is required',
         unique: true,
         trim: true
     },
@@ -26,8 +41,8 @@ const userSchema = new mongoose.Schema({
     bio: {
         type: String,
         default: 'No bio' 
-    }
-
+    },
+    company: Company
 })
 
 const User = mongoose.model('User', userSchema);
