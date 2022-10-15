@@ -35,12 +35,17 @@ const updateCompany = async (req, res) => {
     })
     .then((user)=>res.send(user))
     .catch((err)=>res.status(400).send(err))
-    }
-    
-    
-    
+}
+
+//get user by ID
+const getUser = async (req, res) => {
+    const id = req.params.id;
+    await User.findById(id).then((user)=>res.send(user))
+}
+        
 module.exports = {
     updateUser,
     addCompany,
-    updateCompany
+    updateCompany,
+    getUser
 }
