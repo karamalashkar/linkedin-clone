@@ -1,0 +1,27 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.input{
+    margin: 5px 120px;
+    width: 55%;
+    padding: 20px 10px;
+    font-size: 20px;
+}
+
+.btn{
+    margin-top: 20px;
+    width: 58%;
+    background-color: #2977c9;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 25px;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: #006097;
+}
