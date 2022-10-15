@@ -48,11 +48,19 @@ const getCompany = async (req, res) => {
     const id = req.params.category;
     await User.findOne({"company.id":id}).then((user)=>res.send(user.company));
 }
+
+//get company by category
+const companyByCategory = async (req, res) => {
+    const category = req.params.category;
+    await User.find({"company_category":category}).then((user)=>res.send(user.company));
+}
+    
         
 module.exports = {
     updateUser,
     addCompany,
     updateCompany,
     getUser,
-    getCompany
+    getCompany,
+    companyByCategory
 }
