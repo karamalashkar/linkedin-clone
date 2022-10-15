@@ -42,10 +42,17 @@ const getUser = async (req, res) => {
     const id = req.params.id;
     await User.findById(id).then((user)=>res.send(user))
 }
+
+//get company by ID
+const getCompany = async (req, res) => {
+    const id = req.params.category;
+    await User.findOne({"company.id":id}).then((user)=>res.send(user.company));
+}
         
 module.exports = {
     updateUser,
     addCompany,
     updateCompany,
-    getUser
+    getUser,
+    getCompany
 }
