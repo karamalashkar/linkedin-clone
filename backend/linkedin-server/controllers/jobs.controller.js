@@ -24,9 +24,16 @@ const getJobs = async (req, res) => {
     const id = req.params.id;
     await Job.find({company_id:id}).then((job)=>res.send(job))
 }
+
+//get jobs by category
+const jobByCategory = async (req, res) => {
+    const category = req.params.category;
+    await Job.find({category:category}).then((job)=>res.send(job))
+}
     
 
 module.exports = {
     postJob,
-    getJobs
+    getJobs,
+    jobByCategory
 }
