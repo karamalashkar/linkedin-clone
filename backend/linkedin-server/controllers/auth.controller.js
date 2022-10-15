@@ -13,7 +13,7 @@ const login = async (req, res)=>{
     if(!isMatch) return res.json({message: "Invalid Credentials"});
 
     const token = jwt.sign({email: user.email, name: user.name}, process.env.JWT_SECRET_KEY, {
-        expiresIn: '1h'
+        expiresIn: '10h'
     });
 
     const user_info = await User.find({email});
