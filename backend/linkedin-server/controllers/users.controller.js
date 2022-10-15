@@ -21,9 +21,26 @@ const addCompany = async (req,res)=>{
     user.save()
     res.json(user)
 }
+
+//update company
+const updateCompany = async (req, res) => {
+    const {bio,name,category} = req.body
+    const id=req.params.id
+    await User.findByIdAndUpdate(id,{
+        company:{
+            bio: bio,
+            name: name,
+            company_category: category, 
+        },
+    })
+    .then((user)=>res.send(user))
+    .catch((err)=>res.status(400).send(err))
+    }
+    
     
     
 module.exports = {
     updateUser,
-    addCompany
+    addCompany,
+    updateCompany
 }
