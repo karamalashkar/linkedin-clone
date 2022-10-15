@@ -50,11 +50,19 @@ const applyJob = async (req, res) => {
         })
     }
 }
+
+//get applicant by job id
+const getApply = async (req, res) => {
+    const id = req.params.id;
+    await Apply.find({"job_id":id}).then((apply)=>res.send(apply))
+}
+    
     
 
 module.exports = {
     postJob,
     getJobs,
     jobByCategory,
-    applyJob
+    applyJob,
+    getApply
 }
