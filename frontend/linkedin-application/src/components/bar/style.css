@@ -1,0 +1,11 @@
+.bar{
+    width: 80%;
+    margin: 0 20%;
+}
+
+.input{
+    width: 20%;
+    padding: 10px;
+    float: right;
+    margin-right: 30px;
+}
