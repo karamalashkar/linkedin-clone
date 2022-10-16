@@ -5,13 +5,15 @@ import SignUp from "../signup/SignUp";
 const Landing = () => {
     return (<>
     <div className="main">
-        <div className="main-element">
-            <LandingBar></LandingBar>
-            <h1>Join the biggest<br></br> professional community</h1>
-            <SignUp></SignUp>
-        </div>
-        <div className="main-element">
-            <img src="landing.png"></img>
+        <LandingBar></LandingBar>
+        <div className="landing-body">
+            <div className="main-element">
+                <h1 className="landing-title">Join the biggest<br></br> professional community</h1>
+                <SignUp></SignUp>
+            </div>
+            <div className="main-element">
+                <img src="landing.png"></img>
+            </div>
         </div>
     </div>    
     </>
