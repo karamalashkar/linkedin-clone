@@ -1,0 +1,11 @@
+.job{
+    display: flex;
+}
+
+.side{
+    flex-basis: 20%;
+}
+
+.body{
+    flex-basis: 80%;
+}
