@@ -1,0 +1,11 @@
+.company{
+    display: flex;
+}
+
+.side-company{
+    flex-basis: 20%;
+}
+
+.body-company{
+    flex-basis: 80%;
+}
