@@ -3,7 +3,8 @@
     height: 580px;
     box-shadow: 0 5px 5px 5px #888888;
     position: absolute;
-    margin: 5% 28%;
+    margin: 0 28%;
+    background-color: white;
 }
 
 .edit-item{
