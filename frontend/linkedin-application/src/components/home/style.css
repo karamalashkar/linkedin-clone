@@ -1,0 +1,12 @@
+.home{
+    display: flex;
+    flex-direction: column;
+}
+
+.home-body{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: lightgrey;
+    width: 100%;
+    height: auto;
+}
